@@ -1,0 +1,15 @@
+//plugins {
+//    id 'java'
+//}
+
+allprojects {
+
+}
+
+//tasks.named("jar") {
+//    enabled = false
+//}
+
+//jar {
+//    enabled = false
+//}

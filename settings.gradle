@@ -1,0 +1,23 @@
+pluginManagement {
+    apply from: 'versions.gradle'
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+
+    plugins {
+        id 'org.springframework.boot' version springBootVersion
+        id 'io.spring.dependency-management' version springDependencyManagement
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'demo'
+include 'web-service'
+include 'internal'
+
