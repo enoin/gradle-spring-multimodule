@@ -1,15 +1,11 @@
-//plugins {
-//    id 'java'
-//}
+apply plugin: AppVersionPlugin
 
-allprojects {
-
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
 }
 
-//tasks.named("jar") {
-//    enabled = false
-//}
-
-//jar {
-//    enabled = false
-//}
+appVersion {
+    versionPropertyKey = "app.version"
+    fileLocation = "web-service/src/main/resources/version.properties"
+}
